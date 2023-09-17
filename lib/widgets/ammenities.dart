@@ -19,11 +19,12 @@ class _AmmenitiesState extends State<Ammenities> {
         Column(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 20, bottom: 10),
+              margin: EdgeInsets.only(left: 14, bottom: 10),
               child: Text(
                 "Amenities",
                 style: TextStyle(
                   fontSize: 16,
+                  fontFamily: "Avenir",
                   fontWeight: FontWeight.w800,
                 ),
               ),
@@ -33,7 +34,7 @@ class _AmmenitiesState extends State<Ammenities> {
         Row(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 20),
+              margin: EdgeInsets.only(left: 14),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -54,16 +55,18 @@ class _AmmenitiesState extends State<Ammenities> {
                         ),
                         child: Text(
                           "Air- conditioning",
-                          style: GoogleFonts.lato(
-                            textStyle: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                              color: Color.fromARGB(255, 109, 109, 109),
-                            ),
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontFamily: "Avenir",
+                            fontWeight: FontWeight.w800,
+                            color: Color.fromARGB(255, 109, 109, 109),
                           ),
                         ),
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Row(
                     children: [
@@ -82,16 +85,18 @@ class _AmmenitiesState extends State<Ammenities> {
                         ),
                         child: Text(
                           "Free wifi",
-                          style: GoogleFonts.lato(
-                            textStyle: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                              color: Color.fromARGB(255, 109, 109, 109),
-                            ),
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w800,
+                            fontFamily: "Avenir",
+                            color: Color.fromARGB(255, 109, 109, 109),
                           ),
                         ),
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Row(
                     children: [
@@ -110,12 +115,11 @@ class _AmmenitiesState extends State<Ammenities> {
                         ),
                         child: Text(
                           "Study Material",
-                          style: GoogleFonts.lato(
-                            textStyle: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                              color: Color.fromARGB(255, 109, 109, 109),
-                            ),
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w800,
+                            fontFamily: "Avenir",
+                            color: Color.fromARGB(255, 109, 109, 109),
                           ),
                         ),
                       ),
@@ -125,7 +129,7 @@ class _AmmenitiesState extends State<Ammenities> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 70),
+              margin: EdgeInsets.only(left: 65),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -145,17 +149,19 @@ class _AmmenitiesState extends State<Ammenities> {
                           left: 8.0,
                         ),
                         child: Text(
-                          "Caffeteria",
-                          style: GoogleFonts.lato(
-                            textStyle: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                              color: Color.fromARGB(255, 109, 109, 109),
-                            ),
+                          "Cafeteria",
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w800,
+                            fontFamily: "Avenir",
+                            color: Color.fromARGB(255, 109, 109, 109),
                           ),
                         ),
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -177,18 +183,20 @@ class _AmmenitiesState extends State<Ammenities> {
                             ),
                             child: Text(
                               "CCTV",
-                              style: GoogleFonts.lato(
-                                textStyle: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w800,
-                                  color: Color.fromARGB(255, 109, 109, 109),
-                                ),
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800,
+                                fontFamily: "Avenir",
+                                color: Color.fromARGB(255, 109, 109, 109),
                               ),
                             ),
                           ),
                         ],
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -210,12 +218,11 @@ class _AmmenitiesState extends State<Ammenities> {
                             ),
                             child: Text(
                               "Ostello Counselling",
-                              style: GoogleFonts.lato(
-                                textStyle: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w800,
-                                  color: Color.fromARGB(255, 109, 109, 109),
-                                ),
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800,
+                                fontFamily: "Avenir",
+                                color: Color.fromARGB(255, 109, 109, 109),
                               ),
                             ),
                           ),

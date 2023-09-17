@@ -13,11 +13,11 @@ class CourseCards extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: 500,
-            width: 250,
+            height: 409,
+            width: 222,
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(40),
+              borderRadius: BorderRadius.circular(25),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,13 +32,13 @@ class CourseCards extends StatelessWidget {
                           child: Image.asset(
                             'assets/images/Rectangle 19996 (1).png',
                             width: double.infinity,
-                            height: 120,
+                            height: 100,
                             fit: BoxFit.cover,
                           ),
                         ),
                         Container(
                           width: double.infinity,
-                          height: 120,
+                          height: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.black54,
@@ -48,14 +48,14 @@ class CourseCards extends StatelessWidget {
                     ),
                     IconButton(
                       icon: Icon(Icons.play_circle_filled),
-                      iconSize: 50,
+                      iconSize: 30,
                       color: Colors.white,
                       onPressed: () {},
                     ),
                   ],
                 ),
-                Padding(
-                  padding: EdgeInsets.all(12.0),
+                Container(
+                  margin: EdgeInsets.only(left: 15.0, top: 9),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -64,27 +64,29 @@ class CourseCards extends StatelessWidget {
                         style: GoogleFonts.lato(
                           textStyle: TextStyle(
                             fontWeight: FontWeight.w900,
-                            fontSize: 18,
+                            fontSize: 14,
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 4,
                       ),
                       Row(
                         children: [
                           Text(
-                            "Rs. 1000/- month",
+                            "₹1000/- month",
                             style: TextStyle(
                               color: Colors.black,
+                              fontSize: 12,
                             ),
                           ),
-                          SizedBox(width: 8),
+                          SizedBox(width: 5),
                           Text(
-                            "Rs. 1700",
+                            "₹1700",
                             style: TextStyle(
                               decoration: TextDecoration.lineThrough,
                               color: Color.fromARGB(167, 139, 43, 229),
+                              fontSize: 10,
                             ),
                           ),
                         ],
@@ -92,9 +94,17 @@ class CourseCards extends StatelessWidget {
                       SizedBox(height: 10),
                       Row(
                         children: [
-                          Icon(Icons.access_time),
+                          Icon(
+                            Icons.access_time,
+                            size: 14,
+                          ),
                           SizedBox(width: 4),
-                          Text("1 Year Course Duration"),
+                          Text(
+                            "1 Year Course Duration",
+                            style: TextStyle(
+                              fontSize: 10,
+                            ),
+                          ),
                         ],
                       ),
                       SizedBox(height: 5),
@@ -102,8 +112,8 @@ class CourseCards extends StatelessWidget {
                         children: [
                           Image.asset(
                             "assets/images/ion_book-sharp.png",
-                            height: 20,
-                            width: 20,
+                            height: 14,
+                            width: 14,
                           ),
                           SizedBox(width: 4),
                           Text(
@@ -111,6 +121,7 @@ class CourseCards extends StatelessWidget {
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: Color.fromARGB(255, 106, 106, 106),
+                                fontSize: 10,
                               ),
                             ),
                           ),
@@ -118,19 +129,21 @@ class CourseCards extends StatelessWidget {
                       ),
                       SizedBox(height: 10),
                       Container(
-                        margin: EdgeInsets.only(left: 05),
                         child: Column(
                           children: [
                             ElevatedButton(
                               onPressed: () {},
-                              child: Text("Buy Now"),
+                              child: Text(
+                                "Buy Now",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
                               style: ElevatedButton.styleFrom(
+                                fixedSize: Size(192, 30),
                                 primary: Color.fromARGB(255, 126, 48, 235),
                                 onPrimary: Colors.white,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 70,
-                                  vertical: 8,
-                                ),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
                                     20,
@@ -140,18 +153,22 @@ class CourseCards extends StatelessWidget {
                             ),
                             ElevatedButton(
                               onPressed: () {},
-                              child: Text("Add to Cart"),
+                              child: Text(
+                                "Add to Cart",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontFamily: "Avenir",
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
                               style: ElevatedButton.styleFrom(
+                                fixedSize: Size(192, 30),
                                 primary: Colors.transparent,
                                 onPrimary: Color.fromARGB(255, 126, 48, 235),
                                 side: BorderSide(
                                   color: Color.fromARGB(255, 126, 48, 235),
                                 ),
                                 backgroundColor: Colors.white,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 60,
-                                  vertical: 8,
-                                ),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
                                     20,
@@ -162,53 +179,57 @@ class CourseCards extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 15),
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        margin: EdgeInsets.symmetric(horizontal: 10),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(height: 8),
                             Text(
                               "• Recorded lectures by Ostello",
                               style: GoogleFonts.lato(
                                 color: Color.fromARGB(255, 105, 105, 105),
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4),
+                            SizedBox(height: 3),
                             Text(
                               "• Full lifetime access",
                               style: GoogleFonts.lato(
                                 color: Color.fromARGB(255, 105, 105, 105),
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4),
+                            SizedBox(height: 3),
                             Text(
                               "• Exercise files",
                               style: GoogleFonts.lato(
                                 color: Color.fromARGB(255, 105, 105, 105),
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4),
+                            SizedBox(height: 3),
                             Text(
                               "• Mock tests and assignments",
                               style: GoogleFonts.lato(
                                 color: Color.fromARGB(255, 105, 105, 105),
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4),
+                            SizedBox(height: 3),
                             Text(
                               "• Doubt clearing sessions",
                               style: GoogleFonts.lato(
                                 color: Color.fromARGB(255, 105, 105, 105),
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4),
+                            SizedBox(height: 3),
                           ],
                         ),
                       ),

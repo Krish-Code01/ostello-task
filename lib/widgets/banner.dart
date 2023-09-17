@@ -20,7 +20,7 @@ class TopBanner extends StatelessWidget {
             height: 45,
           ),
           Container(
-            margin: EdgeInsets.only(top: 50),
+            margin: EdgeInsets.only(top: 64),
             child: Stack(
               children: [
                 Container(
@@ -49,6 +49,7 @@ class TopBanner extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.w700,
+                        fontFamily: "Avenir",
                         color: Colors.white),
                   ),
                 ),
@@ -56,7 +57,7 @@ class TopBanner extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(left: 275, top: 50),
+            margin: EdgeInsets.only(left: 279, top: 66),
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -75,6 +76,7 @@ class TopBanner extends StatelessWidget {
                   "Following",
                   style: TextStyle(
                     fontSize: 11.142855644226074,
+                    fontFamily: "Avenir",
                     fontWeight: FontWeight.w500,
                     color: Colors.green,
                   ),
@@ -83,19 +85,19 @@ class TopBanner extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 50, left: 350),
+            margin: EdgeInsets.only(top: 66, left: 353),
             child: Stack(
               alignment: Alignment.center,
               children: [
                 Image.asset(
                   "assets/images/Ellipse 957.png",
-                  width: 25,
-                  height: 25,
+                  width: 22,
+                  height: 22,
                 ),
                 Image.asset(
                   "assets/images/ri_bookmark-line.png",
-                  width: 20,
-                  height: 20,
+                  width: 22,
+                  height: 22,
                 ),
               ],
             ),

@@ -21,7 +21,7 @@ class _InstituteInfoState extends State<InstituteInfo> {
           children: [
             TopBanner(),
             Container(
-              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.only(left: 14, top: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -29,20 +29,21 @@ class _InstituteInfoState extends State<InstituteInfo> {
                     padding: EdgeInsets.only(bottom: 10),
                     child: Text(
                       "Akash Institute",
-                      style: GoogleFonts.lato(
-                        textStyle: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w900,
-                        ),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: "Avenir",
+                        fontWeight: FontWeight.w800,
                       ),
                     ),
                   ),
-                  Text(
-                    "Aakash offers courses for medical, and engineering entrance exams and scholarship exams such as NEET, JEE, Olympiads, NTSE and NSEs. You can take admission in one-year, two-year, three-year or four-year courses.",
-                    style: GoogleFonts.lato(
-                      textStyle: TextStyle(
-                        fontSize: 13,
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    child: Text(
+                      "Aakash offers courses for medical, and engineering entrance exams and scholarship exams such as NEET, JEE, Olympiads, NTSE and NSEs. You can take admission in one-year, two-year, three-year or four-year courses.",
+                      style: TextStyle(
+                        fontSize: 12,
                         fontWeight: FontWeight.w400,
+                        fontFamily: "Avenir",
                         color: Color.fromARGB(255, 61, 61, 61),
                       ),
                     ),
@@ -50,9 +51,12 @@ class _InstituteInfoState extends State<InstituteInfo> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 24,
+            ),
             Ammenities(),
             SizedBox(
-              height: 20,
+              height: 24,
             ),
             Container(
               width: 360,
@@ -64,7 +68,7 @@ class _InstituteInfoState extends State<InstituteInfo> {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 27,
             ),
             RectangularBox(),
             AllCourses(),

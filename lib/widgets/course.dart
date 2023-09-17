@@ -8,13 +8,13 @@ class CourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10.0),
+    return Container(
+      margin: EdgeInsets.only(left: 18, top: 23),
       child: Stack(
         children: [
           Container(
-            height: 250,
-            width: 250,
+            height: 245,
+            width: 222,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(40),
@@ -27,8 +27,8 @@ class CourseCard extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
+                          Container(
+                            margin: const EdgeInsets.only(left: 14.0, top: 19),
                             child: Row(
                               children: [
                                 Image.asset(
@@ -38,12 +38,11 @@ class CourseCard extends StatelessWidget {
                                 ),
                                 Text(
                                   "Bestseller",
-                                  style: GoogleFonts.lato(
-                                    textStyle: TextStyle(
-                                      color: Color.fromARGB(255, 0, 95, 248),
-                                      fontWeight: FontWeight.w900,
-                                      fontSize: 10,
-                                    ),
+                                  style: TextStyle(
+                                    color: Color.fromARGB(255, 0, 95, 248),
+                                    fontFamily: "Avenir",
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 9,
                                   ),
                                 )
                               ],
@@ -53,8 +52,8 @@ class CourseCard extends StatelessWidget {
                             alignment: Alignment.center,
                             children: [
                               Container(
-                                height: 30,
-                                width: 130,
+                                height: 28,
+                                width: 105,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
                                   color: Color.fromARGB(255, 255, 210, 49),
@@ -62,41 +61,42 @@ class CourseCard extends StatelessWidget {
                               ),
                               Text(
                                 "Engineering",
-                                style: GoogleFonts.lato(
-                                  textStyle: TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                  ),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontFamily: "Avenir",
+                                  fontWeight: FontWeight.w900,
                                 ),
-                              )
+                              ),
                             ],
                           ),
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 10),
+                      margin: EdgeInsets.only(left: 34),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Rs. 12000",
+                            "₹12000",
                             style: TextStyle(
                               fontSize: 10,
                               decoration: TextDecoration.lineThrough,
                             ),
                           ),
                           Text(
-                            "Rs. 9000 only",
+                            "₹9000 only",
                             style: TextStyle(
                               fontSize: 14,
-                              color: Color.fromARGB(255, 0, 95, 248),
+                              color: Color.fromRGBO(55, 75, 254, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           Text(
                             "for one year",
                             style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 9,
+                              color: Color.fromRGBO(149, 146, 146, 1),
                             ),
                           ),
                         ],
@@ -105,7 +105,7 @@ class CourseCard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 12,
                 ),
                 Row(
                   children: [
@@ -119,8 +119,10 @@ class CourseCard extends StatelessWidget {
                     Text(
                       "Physics. Chemistry. Maths",
                       style: TextStyle(
-                          fontSize: 12.0,
-                          color: Color.fromARGB(255, 61, 61, 61)),
+                        fontSize: 10.0,
+                        color: Color.fromARGB(255, 61, 61, 61),
+                        fontFamily: "Avenir",
+                      ),
                     ),
                     SizedBox(width: 10.0),
                     Container(
@@ -131,9 +133,9 @@ class CourseCard extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         color: Color.fromARGB(255, 90, 198, 93),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(5.0),
                       ),
-                      height: 30,
+                      height: 23,
                       width: 40,
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -142,14 +144,15 @@ class CourseCard extends StatelessWidget {
                             "4.5",
                             style: TextStyle(
                               color: Colors.white,
+                              fontFamily: "Avenir",
                               fontSize: 10.0,
                             ),
                           ),
-                          SizedBox(width: 4.0),
+                          SizedBox(width: 2.0),
                           Icon(
                             Icons.star,
                             color: Colors.white,
-                            size: 10.0,
+                            size: 12.0,
                           ),
                         ],
                       ),
@@ -157,7 +160,7 @@ class CourseCard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 9,
                 ),
                 Row(
                   children: [
@@ -165,6 +168,7 @@ class CourseCard extends StatelessWidget {
                       alignment: AlignmentDirectional.center,
                       children: [
                         Container(
+                          margin: EdgeInsets.only(left: 0),
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.blue,
@@ -175,7 +179,7 @@ class CourseCard extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 25),
+                          margin: EdgeInsets.only(left: 14),
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.red,
@@ -186,7 +190,7 @@ class CourseCard extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 50),
+                          margin: EdgeInsets.only(left: 28),
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.green,
@@ -198,52 +202,58 @@ class CourseCard extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(width: 8.0),
+                    SizedBox(width: 6.0),
                     Text(
                       "50+ students already enrolled!",
-                      style: TextStyle(fontSize: 10.0),
+                      style: TextStyle(
+                        fontSize: 9.0,
+                        fontFamily: "Avenir",
+                      ),
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 11,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    bottom: 8.0,
-                    left: 5,
-                    right: 5,
-                  ),
+                Container(
+                  margin: EdgeInsets.only(),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.transparent,
-                          onPrimary: Color.fromARGB(255, 126, 48, 235),
-                          side: BorderSide(
-                            color: Color.fromARGB(255, 126, 48, 235),
+                      Container(
+                        margin: EdgeInsets.only(left: 10),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            fixedSize: Size(96, 26),
+                            primary: Colors.transparent,
+                            onPrimary: Color.fromARGB(255, 126, 48, 235),
+                            side: BorderSide(
+                              color: Color.fromARGB(255, 126, 48, 235),
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(
+                                20,
+                              ),
+                            ),
+                            backgroundColor: Color.fromRGBO(242, 247, 251, 1),
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(
-                              20,
+                          child: Text(
+                            'Add To Cart',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontFamily: "Avenir",
                             ),
                           ),
-                          backgroundColor: Color.fromRGBO(242, 247, 251, 1),
-                          padding: EdgeInsets.only(left: 25, right: 25),
                         ),
-                        child: Text(
-                          'Add To Cart',
-                          style: TextStyle(
-                            fontSize: 12,
-                          ),
-                        ),
+                      ),
+                      SizedBox(
+                        width: 7,
                       ),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
+                          fixedSize: Size(96, 26),
                           primary: Color.fromARGB(255, 126, 48, 235),
                           onPrimary: Colors.white,
                           shape: RoundedRectangleBorder(
@@ -251,12 +261,12 @@ class CourseCard extends StatelessWidget {
                               20,
                             ),
                           ),
-                          padding: EdgeInsets.only(left: 25, right: 25),
                         ),
                         child: Text(
                           'Equire Now',
                           style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 10,
+                            fontFamily: "Avenir",
                           ),
                         ),
                       ),
@@ -268,8 +278,8 @@ class CourseCard extends StatelessWidget {
           ),
           Container(
             margin: EdgeInsets.only(top: 200),
-            height: 150,
-            width: 250,
+            height: 134,
+            width: 222,
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 124, 33, 243),
               borderRadius: BorderRadius.only(
@@ -329,9 +339,11 @@ class BulletPointItem extends StatelessWidget {
               Expanded(
                 child: Text(
                   text,
-                  style: GoogleFonts.lato(
-                    textStyle: TextStyle(fontSize: 14.0, color: Colors.white),
-                  ),
+                  style: TextStyle(
+                      fontSize: 12.0,
+                      fontFamily: "Avenir",
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400),
                 ),
               ),
             ],

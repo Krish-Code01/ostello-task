@@ -11,20 +11,20 @@ class RectangularBox extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 420,
+          height: 400,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Color.fromARGB(36, 96, 125, 139),
+            color: Color.fromRGBO(242, 247, 251, 1),
           ),
           child: Column(
             children: [
-              Padding(
-                padding: EdgeInsets.all(10),
+              Container(
+                margin: EdgeInsets.only(top: 12),
                 child: Text(
                   "Popular Courses",
                   style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 16,
                   ),
                 ),
               ),
