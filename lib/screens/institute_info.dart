@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ostello_demo/widgets/ammenities.dart';
 import 'package:ostello_demo/widgets/banner.dart';
 import 'package:ostello_demo/widgets/courses_cards.dart';
@@ -28,17 +29,22 @@ class _InstituteInfoState extends State<InstituteInfo> {
                     padding: EdgeInsets.only(bottom: 10),
                     child: Text(
                       "Akash Institute",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w800,
+                      style: GoogleFonts.lato(
+                        textStyle: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w800,
+                        ),
                       ),
                     ),
                   ),
                   Text(
                     "Aakash offers courses for medical, and engineering entrance exams and scholarship exams such as NEET, JEE, Olympiads, NTSE and NSEs. You can take admission in one-year, two-year, three-year or four-year courses.",
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400,
+                    style: GoogleFonts.lato(
+                      textStyle: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        color: Color.fromARGB(255, 61, 61, 61),
+                      ),
                     ),
                   )
                 ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CourseCard extends StatelessWidget {
   const CourseCard({super.key});
@@ -13,7 +14,7 @@ class CourseCard extends StatelessWidget {
         children: [
           Container(
             height: 250,
-            width: 230,
+            width: 250,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(40),
@@ -37,9 +38,11 @@ class CourseCard extends StatelessWidget {
                                 ),
                                 Text(
                                   "Bestseller",
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 95, 248),
-                                    fontWeight: FontWeight.bold,
+                                  style: GoogleFonts.lato(
+                                    textStyle: TextStyle(
+                                      color: Color.fromARGB(255, 0, 95, 248),
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 )
                               ],
@@ -58,8 +61,10 @@ class CourseCard extends StatelessWidget {
                               ),
                               Text(
                                 "Engineering",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                                style: GoogleFonts.lato(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               )
                             ],
@@ -82,7 +87,7 @@ class CourseCard extends StatelessWidget {
                           Text(
                             "Rs. 9000 only",
                             style: TextStyle(
-                              fontSize: 12,
+                              fontSize: 14,
                               color: Color.fromARGB(255, 0, 95, 248),
                               fontWeight: FontWeight.bold,
                             ),
@@ -106,26 +111,29 @@ class CourseCard extends StatelessWidget {
                     SizedBox(
                       width: 10,
                     ),
-                    Icon(
-                      Icons.book,
-                      color: Colors.blue,
-                      size: 15.0,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset("assets/images/ion_book-sharp.png"),
                     ),
                     Text(
                       "Physics. Chemistry. Maths",
                       style: TextStyle(
-                        fontSize: 10.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+                          fontSize: 10.0,
+                          color: Color.fromARGB(255, 61, 61, 61)),
                     ),
                     SizedBox(width: 10.0),
                     Container(
                       padding:
-                          EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                          EdgeInsets.symmetric(horizontal: 6.0, vertical: 4.0),
+                      margin: EdgeInsets.only(
+                        left: 10,
+                      ),
                       decoration: BoxDecoration(
-                        color: Colors.green,
+                        color: Color.fromARGB(255, 90, 198, 93),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
+                      height: 30,
+                      width: 40,
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -160,7 +168,10 @@ class CourseCard extends StatelessWidget {
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.blue,
-                            child: Text("A"),
+                            child: Image.asset(
+                              "assets/images/Ellipse 857.png",
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Container(
@@ -168,13 +179,19 @@ class CourseCard extends StatelessWidget {
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.red,
-                            child: Text("B"),
+                            child: Image.asset(
+                              "assets/images/'.png",
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         CircleAvatar(
                           radius: 10.0,
                           backgroundColor: Colors.green,
-                          child: Text("C"),
+                          child: Image.asset(
+                            "assets/images/Ellipse 859.png",
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ],
                     ),
@@ -184,6 +201,9 @@ class CourseCard extends StatelessWidget {
                       style: TextStyle(fontSize: 10.0),
                     ),
                   ],
+                ),
+                SizedBox(
+                  height: 5,
                 ),
                 Padding(
                   padding: EdgeInsets.only(
@@ -209,12 +229,16 @@ class CourseCard extends StatelessWidget {
                             ),
                           ),
                           backgroundColor: Colors.white,
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 12),
                         ),
-                        child: Text('Add To Cart'),
+                        child: Text(
+                          'Add To Cart',
+                          style: TextStyle(
+                            fontSize: 10,
+                          ),
+                        ),
                       ),
-                      SizedBox(width: 16),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -225,8 +249,15 @@ class CourseCard extends StatelessWidget {
                               20,
                             ),
                           ),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 10),
                         ),
-                        child: Text('Equire Now'),
+                        child: Text(
+                          'Equire Now',
+                          style: TextStyle(
+                            fontSize: 10,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -235,9 +266,9 @@ class CourseCard extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 180),
+            margin: EdgeInsets.only(top: 200),
             height: 150,
-            width: 230,
+            width: 250,
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 124, 33, 243),
               borderRadius: BorderRadius.only(
@@ -275,32 +306,37 @@ class BulletPointItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 10,
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              width: 8.0,
-              height: 8.0,
-              margin: EdgeInsets.only(top: 4.0, right: 8.0),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
+    return Padding(
+      padding: const EdgeInsets.only(left: 8.0),
+      child: Column(
+        children: [
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 8.0,
+                height: 8.0,
+                margin: EdgeInsets.only(top: 4.0, right: 8.0),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.white,
+                ),
               ),
-            ),
-            Expanded(
-              child: Text(
-                text,
-                style: TextStyle(fontSize: 14.0, color: Colors.white),
+              Expanded(
+                child: Text(
+                  text,
+                  style: GoogleFonts.lato(
+                    textStyle: TextStyle(fontSize: 14.0, color: Colors.white),
+                  ),
+                ),
               ),
-            ),
-          ],
-        ),
-      ],
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

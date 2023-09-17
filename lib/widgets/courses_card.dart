@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CourseCards extends StatelessWidget {
   const CourseCards({super.key});
@@ -13,7 +14,7 @@ class CourseCards extends StatelessWidget {
         children: [
           Container(
             height: 500,
-            width: 230,
+            width: 250,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(40),
@@ -60,10 +61,15 @@ class CourseCards extends StatelessWidget {
                     children: [
                       Text(
                         "Physics Foundation Course",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                        style: GoogleFonts.lato(
+                          textStyle: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 18,
+                          ),
                         ),
+                      ),
+                      SizedBox(
+                        height: 5,
                       ),
                       Row(
                         children: [
@@ -76,7 +82,7 @@ class CourseCards extends StatelessWidget {
                           ),
                           SizedBox(width: 8),
                           Text(
-                            "Rs. 1000 per month",
+                            "Rs. 1000/- month",
                             style: TextStyle(
                               color: Colors.black,
                             ),
@@ -88,6 +94,24 @@ class CourseCards extends StatelessWidget {
                           Icon(Icons.access_time),
                           SizedBox(width: 4),
                           Text("1 Year Course Duration"),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/images/ion_book-sharp.png",
+                            height: 20,
+                            width: 20,
+                          ),
+                          SizedBox(width: 4),
+                          Text(
+                            "Offline.Online",
+                            style: GoogleFonts.lato(
+                              textStyle: TextStyle(
+                                color: Color.fromARGB(255, 106, 106, 106),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                       SizedBox(height: 16),
@@ -141,15 +165,45 @@ class CourseCards extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(height: 8),
-                          Text("• Recorded lectures by Ostello"),
+                          Text(
+                            "• Recorded lectures by Ostello",
+                            style: GoogleFonts.lato(
+                              color: Color.fromARGB(255, 105, 105, 105),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(height: 4),
-                          Text("• Full lifetime access"),
+                          Text(
+                            "• Full lifetime access",
+                            style: GoogleFonts.lato(
+                              color: Color.fromARGB(255, 105, 105, 105),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(height: 4),
-                          Text("• Exercise files"),
+                          Text(
+                            "• Exercise files",
+                            style: GoogleFonts.lato(
+                              color: Color.fromARGB(255, 105, 105, 105),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(height: 4),
-                          Text("• Mock tests and assignments"),
+                          Text(
+                            "• Mock tests and assignments",
+                            style: GoogleFonts.lato(
+                              color: Color.fromARGB(255, 105, 105, 105),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(height: 4),
-                          Text("• Doubt clearing sessions"),
+                          Text(
+                            "• Doubt clearing sessions",
+                            style: GoogleFonts.lato(
+                              color: Color.fromARGB(255, 105, 105, 105),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(height: 4),
                         ],
                       ),

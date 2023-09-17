@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ostello_demo/widgets/courses_card.dart';
 
 class AllCourses extends StatelessWidget {
@@ -25,9 +26,11 @@ class AllCourses extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 child: Text(
                   "All Courses",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                  style: GoogleFonts.lato(
+                    textStyle: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),
@@ -73,7 +76,7 @@ class _CourseDropdownState extends State<CourseDropdown> {
           children: [
             Container(
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.purple),
+                border: Border.all(color: Color.fromARGB(255, 134, 35, 210)),
                 borderRadius: BorderRadius.all(Radius.circular(8.0)),
               ),
               child: DropdownButton<String>(
@@ -97,8 +100,10 @@ class _CourseDropdownState extends State<CourseDropdown> {
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
                         value,
-                        style:
-                            TextStyle(color: Color.fromARGB(255, 171, 29, 228)),
+                        style: GoogleFonts.nunito(
+                          textStyle: TextStyle(
+                              color: Color.fromARGB(255, 171, 29, 228)),
+                        ),
                       ),
                     ),
                   );

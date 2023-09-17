@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Ammenities extends StatefulWidget {
   const Ammenities({super.key});
@@ -47,11 +48,21 @@ class _AmmenitiesState extends State<Ammenities> {
                           )
                         ],
                       ),
-                      Text("Air- conditioning",
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                          ))
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 8.0,
+                        ),
+                        child: Text(
+                          "Air- conditioning",
+                          style: GoogleFonts.lato(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w800,
+                              color: Color.fromARGB(255, 109, 109, 109),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   Row(
@@ -65,11 +76,21 @@ class _AmmenitiesState extends State<Ammenities> {
                           )
                         ],
                       ),
-                      Text("Free wifi",
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                          ))
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 8.0,
+                        ),
+                        child: Text(
+                          "Free wifi",
+                          style: GoogleFonts.lato(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w800,
+                              color: Color.fromARGB(255, 109, 109, 109),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   Row(
@@ -83,11 +104,21 @@ class _AmmenitiesState extends State<Ammenities> {
                           )
                         ],
                       ),
-                      Text("Study Material",
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                          ))
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 8.0,
+                        ),
+                        child: Text(
+                          "Study Material",
+                          style: GoogleFonts.lato(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w800,
+                              color: Color.fromARGB(255, 109, 109, 109),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],
@@ -109,11 +140,21 @@ class _AmmenitiesState extends State<Ammenities> {
                           )
                         ],
                       ),
-                      Text("Caffeteria",
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                          ))
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 8.0,
+                        ),
+                        child: Text(
+                          "Caffeteria",
+                          style: GoogleFonts.lato(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w800,
+                              color: Color.fromARGB(255, 109, 109, 109),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   Row(
@@ -130,11 +171,21 @@ class _AmmenitiesState extends State<Ammenities> {
                               )
                             ],
                           ),
-                          Text("CCTV",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w800,
-                              ))
+                          Padding(
+                            padding: EdgeInsets.only(
+                              left: 8.0,
+                            ),
+                            child: Text(
+                              "CCTV",
+                              style: GoogleFonts.lato(
+                                textStyle: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color.fromARGB(255, 109, 109, 109),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ],
@@ -153,11 +204,21 @@ class _AmmenitiesState extends State<Ammenities> {
                               )
                             ],
                           ),
-                          Text("Ostello Counselling",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w800,
-                              ))
+                          Padding(
+                            padding: EdgeInsets.only(
+                              left: 8.0,
+                            ),
+                            child: Text(
+                              "Ostello Counselling",
+                              style: GoogleFonts.lato(
+                                textStyle: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color.fromARGB(255, 109, 109, 109),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ],
