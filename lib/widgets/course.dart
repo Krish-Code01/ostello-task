@@ -148,7 +148,7 @@ class CourseCard extends StatelessWidget {
                               fontSize: 10.0,
                             ),
                           ),
-                          SizedBox(width: 2.0),
+                          SizedBox(width: 0),
                           Icon(
                             Icons.star,
                             color: Colors.white,
