@@ -23,8 +23,8 @@ class RectangularBox extends StatelessWidget {
                 child: Text(
                   "Popular Courses",
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                    fontSize: 18,
                   ),
                 ),
               ),

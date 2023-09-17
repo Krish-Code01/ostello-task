@@ -32,7 +32,7 @@ class _InstituteInfoState extends State<InstituteInfo> {
                       style: GoogleFonts.lato(
                         textStyle: TextStyle(
                           fontSize: 16,
-                          fontWeight: FontWeight.w800,
+                          fontWeight: FontWeight.w900,
                         ),
                       ),
                     ),
@@ -41,7 +41,7 @@ class _InstituteInfoState extends State<InstituteInfo> {
                     "Aakash offers courses for medical, and engineering entrance exams and scholarship exams such as NEET, JEE, Olympiads, NTSE and NSEs. You can take admission in one-year, two-year, three-year or four-year courses.",
                     style: GoogleFonts.lato(
                       textStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Color.fromARGB(255, 61, 61, 61),
                       ),

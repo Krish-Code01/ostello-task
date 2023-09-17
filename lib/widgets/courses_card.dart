@@ -74,21 +74,22 @@ class CourseCards extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            "Rs. 1700",
-                            style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              color: Colors.grey,
-                            ),
-                          ),
-                          SizedBox(width: 8),
-                          Text(
                             "Rs. 1000/- month",
                             style: TextStyle(
                               color: Colors.black,
                             ),
                           ),
+                          SizedBox(width: 8),
+                          Text(
+                            "Rs. 1700",
+                            style: TextStyle(
+                              decoration: TextDecoration.lineThrough,
+                              color: Color.fromARGB(167, 139, 43, 229),
+                            ),
+                          ),
                         ],
                       ),
+                      SizedBox(height: 10),
                       Row(
                         children: [
                           Icon(Icons.access_time),
@@ -96,6 +97,7 @@ class CourseCards extends StatelessWidget {
                           Text("1 Year Course Duration"),
                         ],
                       ),
+                      SizedBox(height: 5),
                       Row(
                         children: [
                           Image.asset(
@@ -114,7 +116,7 @@ class CourseCards extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 16),
+                      SizedBox(height: 10),
                       Container(
                         margin: EdgeInsets.only(left: 05),
                         child: Column(
@@ -160,52 +162,55 @@ class CourseCards extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 8),
-                          Text(
-                            "• Recorded lectures by Ostello",
-                            style: GoogleFonts.lato(
-                              color: Color.fromARGB(255, 105, 105, 105),
-                              fontWeight: FontWeight.bold,
+                      SizedBox(height: 10),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 8),
+                            Text(
+                              "• Recorded lectures by Ostello",
+                              style: GoogleFonts.lato(
+                                color: Color.fromARGB(255, 105, 105, 105),
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 4),
-                          Text(
-                            "• Full lifetime access",
-                            style: GoogleFonts.lato(
-                              color: Color.fromARGB(255, 105, 105, 105),
-                              fontWeight: FontWeight.bold,
+                            SizedBox(height: 4),
+                            Text(
+                              "• Full lifetime access",
+                              style: GoogleFonts.lato(
+                                color: Color.fromARGB(255, 105, 105, 105),
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 4),
-                          Text(
-                            "• Exercise files",
-                            style: GoogleFonts.lato(
-                              color: Color.fromARGB(255, 105, 105, 105),
-                              fontWeight: FontWeight.bold,
+                            SizedBox(height: 4),
+                            Text(
+                              "• Exercise files",
+                              style: GoogleFonts.lato(
+                                color: Color.fromARGB(255, 105, 105, 105),
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 4),
-                          Text(
-                            "• Mock tests and assignments",
-                            style: GoogleFonts.lato(
-                              color: Color.fromARGB(255, 105, 105, 105),
-                              fontWeight: FontWeight.bold,
+                            SizedBox(height: 4),
+                            Text(
+                              "• Mock tests and assignments",
+                              style: GoogleFonts.lato(
+                                color: Color.fromARGB(255, 105, 105, 105),
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 4),
-                          Text(
-                            "• Doubt clearing sessions",
-                            style: GoogleFonts.lato(
-                              color: Color.fromARGB(255, 105, 105, 105),
-                              fontWeight: FontWeight.bold,
+                            SizedBox(height: 4),
+                            Text(
+                              "• Doubt clearing sessions",
+                              style: GoogleFonts.lato(
+                                color: Color.fromARGB(255, 105, 105, 105),
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 4),
-                        ],
+                            SizedBox(height: 4),
+                          ],
+                        ),
                       ),
                     ],
                   ),

@@ -28,8 +28,8 @@ class AllCourses extends StatelessWidget {
                   "All Courses",
                   style: GoogleFonts.lato(
                     textStyle: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -96,13 +96,14 @@ class _CourseDropdownState extends State<CourseDropdown> {
                 ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
                         value,
                         style: GoogleFonts.nunito(
                           textStyle: TextStyle(
                               color: Color.fromARGB(255, 171, 29, 228)),
+                          fontSize: 14,
                         ),
                       ),
                     ),
@@ -133,12 +134,14 @@ class _CourseDropdownState extends State<CourseDropdown> {
                 ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
                         value,
-                        style:
-                            TextStyle(color: Color.fromARGB(255, 171, 29, 228)),
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 171, 29, 228),
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                   );
@@ -168,12 +171,14 @@ class _CourseDropdownState extends State<CourseDropdown> {
                 ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 10),
                       child: Text(
                         value,
-                        style:
-                            TextStyle(color: Color.fromARGB(255, 171, 29, 228)),
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 171, 29, 228),
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                   );
@@ -198,9 +203,14 @@ class _CourseDropdownState extends State<CourseDropdown> {
                     selectedClass = newValue!;
                   });
                 },
-                hint: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text('Coaching Type'),
+                hint: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 35),
+                  child: Text(
+                    'Coaching Type',
+                    style: GoogleFonts.nunito(
+                      textStyle: TextStyle(fontSize: 14),
+                    ),
+                  ),
                 ),
                 underline: SizedBox(),
                 items: <String>[
@@ -214,8 +224,9 @@ class _CourseDropdownState extends State<CourseDropdown> {
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
                         value,
-                        style:
-                            TextStyle(color: Color.fromARGB(255, 171, 29, 228)),
+                        style: GoogleFonts.nunito(
+                          textStyle: TextStyle(fontSize: 14),
+                        ),
                       ),
                     ),
                   );
@@ -235,9 +246,14 @@ class _CourseDropdownState extends State<CourseDropdown> {
                     selectedSub = newValue!;
                   });
                 },
-                hint: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text('Course Type'),
+                hint: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 35),
+                  child: Text(
+                    'Course Type',
+                    style: GoogleFonts.nunito(
+                      textStyle: TextStyle(fontSize: 14),
+                    ),
+                  ),
                 ),
                 underline: SizedBox(),
                 items: <String>[
@@ -251,8 +267,9 @@ class _CourseDropdownState extends State<CourseDropdown> {
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
                         value,
-                        style:
-                            TextStyle(color: Color.fromARGB(255, 171, 29, 228)),
+                        style: GoogleFonts.nunito(
+                          textStyle: TextStyle(fontSize: 14),
+                        ),
                       ),
                     ),
                   );

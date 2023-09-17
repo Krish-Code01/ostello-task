@@ -41,7 +41,8 @@ class CourseCard extends StatelessWidget {
                                   style: GoogleFonts.lato(
                                     textStyle: TextStyle(
                                       color: Color.fromARGB(255, 0, 95, 248),
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 10,
                                     ),
                                   ),
                                 )
@@ -63,7 +64,7 @@ class CourseCard extends StatelessWidget {
                                 "Engineering",
                                 style: GoogleFonts.lato(
                                   textStyle: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w900,
                                   ),
                                 ),
                               )
@@ -112,13 +113,13 @@ class CourseCard extends StatelessWidget {
                       width: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(4.0),
                       child: Image.asset("assets/images/ion_book-sharp.png"),
                     ),
                     Text(
                       "Physics. Chemistry. Maths",
                       style: TextStyle(
-                          fontSize: 10.0,
+                          fontSize: 12.0,
                           color: Color.fromARGB(255, 61, 61, 61)),
                     ),
                     SizedBox(width: 10.0),
@@ -164,7 +165,6 @@ class CourseCard extends StatelessWidget {
                       alignment: AlignmentDirectional.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(left: 40),
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.blue,
@@ -175,7 +175,7 @@ class CourseCard extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 20),
+                          margin: EdgeInsets.only(left: 25),
                           child: CircleAvatar(
                             radius: 10.0,
                             backgroundColor: Colors.red,
@@ -185,12 +185,15 @@ class CourseCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        CircleAvatar(
-                          radius: 10.0,
-                          backgroundColor: Colors.green,
-                          child: Image.asset(
-                            "assets/images/Ellipse 859.png",
-                            fit: BoxFit.cover,
+                        Container(
+                          margin: EdgeInsets.only(left: 50),
+                          child: CircleAvatar(
+                            radius: 10.0,
+                            backgroundColor: Colors.green,
+                            child: Image.asset(
+                              "assets/images/Ellipse 859.png",
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ],
@@ -228,14 +231,13 @@ class CourseCard extends StatelessWidget {
                               20,
                             ),
                           ),
-                          backgroundColor: Colors.white,
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 12),
+                          backgroundColor: Color.fromRGBO(242, 247, 251, 1),
+                          padding: EdgeInsets.only(left: 25, right: 25),
                         ),
                         child: Text(
                           'Add To Cart',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontSize: 12,
                           ),
                         ),
                       ),
@@ -249,13 +251,12 @@ class CourseCard extends StatelessWidget {
                               20,
                             ),
                           ),
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 10),
+                          padding: EdgeInsets.only(left: 25, right: 25),
                         ),
                         child: Text(
                           'Equire Now',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontSize: 12,
                           ),
                         ),
                       ),
@@ -283,11 +284,11 @@ class CourseCard extends StatelessWidget {
                 children: [
                   BulletPointItem(
                     text:
-                        "1 Year Power Step Classroom Course for JEE (Main & Advance)",
+                        "1 Year Power Step Classroom Course for JEE \n(Main & Advance)",
                   ),
                   BulletPointItem(
                     text:
-                        "2 Year First Step Integrated Classroom Course (Main & Advance)",
+                        "2 Year First Step Integrated Classroom Course \n(Main & Advance)",
                   ),
                 ],
               ),
