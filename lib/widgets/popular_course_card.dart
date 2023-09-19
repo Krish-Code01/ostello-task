@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CourseCard extends StatelessWidget {
-  const CourseCard({super.key});
+class PopularCourseCard extends StatelessWidget {
+  const PopularCourseCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class CourseCard extends StatelessWidget {
             width: 222,
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(40),
+              borderRadius: BorderRadius.circular(25),
             ),
             child: Column(
               children: [
@@ -28,18 +29,26 @@ class CourseCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: const EdgeInsets.only(left: 14.0, top: 19),
+                            margin: const EdgeInsets.only(
+                                left: 16.0, top: 16, bottom: 10),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Image.asset(
-                                  "assets/images/material-symbols_trophy.png",
-                                  width: 20,
-                                  height: 20,
+                                Container(
+                                  margin: EdgeInsets.only(
+                                    right: 2,
+                                  ),
+                                  child: Image.asset(
+                                    "assets/images/trophy.png",
+                                    width: 8,
+                                    height: 8,
+                                  ),
                                 ),
                                 Text(
                                   "Bestseller",
                                   style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 95, 248),
+                                    color: Color.fromRGBO(55, 74, 254, 1),
                                     fontFamily: "Avenir",
                                     fontWeight: FontWeight.w900,
                                     fontSize: 9,
@@ -56,7 +65,7 @@ class CourseCard extends StatelessWidget {
                                 width: 105,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
-                                  color: Color.fromARGB(255, 255, 210, 49),
+                                  color: Color.fromRGBO(253, 216, 53, 1),
                                 ),
                               ),
                               Text(
@@ -64,7 +73,7 @@ class CourseCard extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontFamily: "Avenir",
-                                  fontWeight: FontWeight.w900,
+                                  fontWeight: FontWeight.w800,
                                 ),
                               ),
                             ],
@@ -114,7 +123,11 @@ class CourseCard extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: Image.asset("assets/images/ion_book-sharp.png"),
+                      child: Image.asset(
+                        "assets/images/pink_book.png",
+                        height: 14,
+                        width: 14,
+                      ),
                     ),
                     Text(
                       "Physics. Chemistry. Maths",
@@ -132,7 +145,7 @@ class CourseCard extends StatelessWidget {
                         left: 10,
                       ),
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 90, 198, 93),
+                        color: Color.fromRGBO(0, 213, 102, 1),
                         borderRadius: BorderRadius.circular(5.0),
                       ),
                       height: 23,
@@ -164,43 +177,13 @@ class CourseCard extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Stack(
-                      alignment: AlignmentDirectional.center,
-                      children: [
-                        Container(
-                          margin: EdgeInsets.only(left: 0),
-                          child: CircleAvatar(
-                            radius: 10.0,
-                            backgroundColor: Colors.blue,
-                            child: Image.asset(
-                              "assets/images/Ellipse 857.png",
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(left: 14),
-                          child: CircleAvatar(
-                            radius: 10.0,
-                            backgroundColor: Colors.red,
-                            child: Image.asset(
-                              "assets/images/'.png",
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(left: 28),
-                          child: CircleAvatar(
-                            radius: 10.0,
-                            backgroundColor: Colors.green,
-                            child: Image.asset(
-                              "assets/images/Ellipse 859.png",
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                      ],
+                    SizedBox(
+                      width: 14,
+                    ),
+                    Image.asset(
+                      "assets/images/student.png",
+                      height: 19,
+                      width: 46,
                     ),
                     SizedBox(width: 6.0),
                     Text(
@@ -221,54 +204,45 @@ class CourseCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 10),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            fixedSize: Size(96, 26),
-                            primary: Colors.transparent,
-                            onPrimary: Color.fromARGB(255, 126, 48, 235),
-                            side: BorderSide(
-                              color: Color.fromARGB(255, 126, 48, 235),
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(
-                                20,
+                          margin: EdgeInsets.only(left: 10),
+                          child: Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                "assets/images/Rectangle 2.svg",
+                                width: 96,
+                                height: 26,
                               ),
-                            ),
-                            backgroundColor: Color.fromRGBO(242, 247, 251, 1),
-                          ),
-                          child: Text(
-                            'Add To Cart',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontFamily: "Avenir",
-                            ),
-                          ),
-                        ),
-                      ),
+                              Text(
+                                "Add to Cart",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w500,
+                                  color: Color.fromRGBO(126, 36, 225, 1),
+                                ),
+                              ),
+                            ],
+                          )),
                       SizedBox(
                         width: 7,
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          fixedSize: Size(96, 26),
-                          primary: Color.fromARGB(255, 126, 48, 235),
-                          onPrimary: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(
-                              20,
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          SvgPicture.asset(
+                            "assets/images/Rectangle 2 enquire.svg",
+                            width: 96,
+                            height: 26,
+                          ),
+                          Text(
+                            "Enquire Now",
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                              color: Color.fromRGBO(126, 36, 225, 1),
                             ),
                           ),
-                        ),
-                        child: Text(
-                          'Equire Now',
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontFamily: "Avenir",
-                          ),
-                        ),
+                        ],
                       ),
                     ],
                   ),
@@ -277,14 +251,14 @@ class CourseCard extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 200),
+            margin: EdgeInsets.only(top: 172),
             height: 134,
             width: 222,
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 124, 33, 243),
               borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(40),
-                bottomRight: Radius.circular(40),
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
               ),
             ),
             child: Padding(
@@ -340,10 +314,11 @@ class BulletPointItem extends StatelessWidget {
                 child: Text(
                   text,
                   style: TextStyle(
-                      fontSize: 12.0,
-                      fontFamily: "Avenir",
-                      color: Colors.white,
-                      fontWeight: FontWeight.w400),
+                    fontSize: 12.0,
+                    fontFamily: "Avenir",
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ],

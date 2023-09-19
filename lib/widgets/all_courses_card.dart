@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CourseCards extends StatelessWidget {
-  const CourseCards({super.key});
+class AllCourseCards extends StatelessWidget {
+  const AllCourseCards({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +109,7 @@ class CourseCards extends StatelessWidget {
                       Row(
                         children: [
                           Image.asset(
-                            "assets/images/ion_book-sharp.png",
+                            "assets/images/pink_book.png",
                             height: 14,
                             width: 14,
                           ),

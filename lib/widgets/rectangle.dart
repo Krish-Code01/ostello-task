@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:ostello_demo/widgets/course.dart';
+import 'package:ostello_demo/widgets/popular_course_card.dart';
 
 class RectangularBox extends StatelessWidget {
   const RectangularBox({super.key});
@@ -32,9 +32,9 @@ class RectangularBox extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    CourseCard(),
-                    CourseCard(),
-                    CourseCard(),
+                    PopularCourseCard(),
+                    PopularCourseCard(),
+                    PopularCourseCard(),
                   ],
                 ),
               ),
