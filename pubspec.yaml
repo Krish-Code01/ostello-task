@@ -85,6 +85,12 @@ flutter:
         - asset: assets/fonts/AvenirNextLTPro-Demi.otf
         - asset: assets/fonts/AvenirNextLTPro-It.otf
         - asset: assets/fonts/AvenirNextLTPro-Regular.otf
+    - family: StarIcon
+      fonts:
+        - asset: assets/images/star_icon.ttf
+    - family: FilledStar
+      fonts:
+        - asset: assets/images/filled_star.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

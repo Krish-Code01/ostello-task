@@ -479,7 +479,7 @@ class _ReviewsScreenState extends State<ReviewsScreen> {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(left: 16.0, top: 17, right: 16),
                       child: Text(
                         "The course felt so personalized that I could follow it all along. The instructor knew exactly what he was doing and it was easy for me to grasp the basic concepts as well. Highly recommended!",
                         style: TextStyle(
@@ -574,7 +574,7 @@ class _ReviewsScreenState extends State<ReviewsScreen> {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(left: 16.0, top: 17, right: 16),
                       child: Text(
                         "The course felt so personalized that I could follow it all along. The instructor knew exactly what he was doing and it was easy for me to grasp the basic concepts as well. Highly recommended!",
                         style: TextStyle(
@@ -666,7 +666,7 @@ class _ReviewsScreenState extends State<ReviewsScreen> {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(left: 16.0, top: 17, right: 16),
                       child: Text(
                         "The course felt so personalized that I could follow it all along. The instructor knew exactly what he was doing and it was easy for me to grasp the basic concepts as well. Highly recommended!",
                         style: TextStyle(

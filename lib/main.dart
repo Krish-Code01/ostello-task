@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ostello_demo/screens/add_review_screen.dart';
+import 'package:ostello_demo/screens/coaching_centers.dart';
 import 'package:ostello_demo/screens/institute_info_screen.dart';
 import 'package:ostello_demo/screens/reviews_screen.dart';
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         ReviewsScreen.routeName: (ctx) => ReviewsScreen(),
         AddReviewScreen.routeName: (ctx) => AddReviewScreen(),
+        CoachingCenters.routeName: (ctx) => CoachingCenters(),
       },
     );
   }
