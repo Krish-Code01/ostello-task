@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../screens/reviews_screen.dart';
+
 class Reviews extends StatelessWidget {
   const Reviews({super.key});
 
@@ -71,13 +73,21 @@ class Reviews extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    "view all reviews >",
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontFamily: "Avenir",
-                      fontWeight: FontWeight.w600,
-                      color: Color.fromRGBO(144, 43, 255, 1),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(
+                        context,
+                        ReviewsScreen.routeName,
+                      );
+                    },
+                    child: Text(
+                      "view all reviews >",
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontFamily: "Avenir",
+                        fontWeight: FontWeight.w600,
+                        color: Color.fromRGBO(144, 43, 255, 1),
+                      ),
                     ),
                   ),
                   SizedBox(

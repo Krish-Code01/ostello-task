@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.4
   flutter_svg: ^1.1.6
+  dropdown_button2: ^2.1.4
+  carousel_slider: ^4.2.1
+  rating_bar_flutter: ^1.0.2
 
 dev_dependencies:
   flutter_test:

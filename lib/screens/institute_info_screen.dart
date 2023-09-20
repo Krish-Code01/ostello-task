@@ -16,14 +16,14 @@ import 'package:ostello_demo/widgets/school_card.dart';
 import 'package:ostello_demo/widgets/toppers.dart';
 import 'package:ostello_demo/widgets/video_card.dart';
 
-class InstituteInfo extends StatefulWidget {
-  const InstituteInfo({super.key});
+class InstituteInfoScreen extends StatefulWidget {
+  const InstituteInfoScreen({super.key});
 
   @override
-  State<InstituteInfo> createState() => _InstituteInfoState();
+  State<InstituteInfoScreen> createState() => _InstituteInfoScreenState();
 }
 
-class _InstituteInfoState extends State<InstituteInfo> {
+class _InstituteInfoScreenState extends State<InstituteInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
